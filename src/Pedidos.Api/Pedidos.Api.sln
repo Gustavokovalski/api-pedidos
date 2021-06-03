@@ -5,17 +5,27 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedidos.Api", "Pedidos.Api.csproj", "{9EDDE01D-9B09-4A02-98C9-F9F61A1EFCAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pedidos.CrossCutting", "..\Pedidos.CrossCutting\Pedidos.CrossCutting.csproj", "{60DCD405-897F-44DF-9541-56BE5264F20D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedidos.CrossCutting", "..\Pedidos.CrossCutting\Pedidos.CrossCutting.csproj", "{60DCD405-897F-44DF-9541-56BE5264F20D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pedidos.Domain", "..\Pedidos.Domain\Pedidos.Domain.csproj", "{E2E5D642-D14F-4B02-88F9-A5FE994662CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedidos.Domain", "..\Pedidos.Domain\Pedidos.Domain.csproj", "{E2E5D642-D14F-4B02-88F9-A5FE994662CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pedidos.Domain.Command", "..\Pedidos.Domain.Command\Pedidos.Domain.Command.csproj", "{084C1846-384F-4F8B-9774-3B8085E4558D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedidos.Domain.Command", "..\Pedidos.Domain.Command\Pedidos.Domain.Command.csproj", "{084C1846-384F-4F8B-9774-3B8085E4558D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pedidos.Domain.Query", "..\Pedidos.Domain.Query\Pedidos.Domain.Query.csproj", "{51A68B99-7E88-45D3-B003-B104E18366BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedidos.Domain.Query", "..\Pedidos.Domain.Query\Pedidos.Domain.Query.csproj", "{51A68B99-7E88-45D3-B003-B104E18366BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pedidos.Infrastructure.Data", "..\Pedidos.Infrastructure.Data\Pedidos.Infrastructure.Data.csproj", "{249B9067-0035-43EE-92C1-6FDA458D68C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedidos.Infrastructure.Data", "..\Pedidos.Infrastructure.Data\Pedidos.Infrastructure.Data.csproj", "{249B9067-0035-43EE-92C1-6FDA458D68C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pedidos.Tests", "..\Pedidos.Tests\Pedidos.Tests.csproj", "{4A9D4A29-F8F8-4E5D-8964-4420979891DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedidos.Tests", "..\Pedidos.Tests\Pedidos.Tests.csproj", "{4A9D4A29-F8F8-4E5D-8964-4420979891DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{AA81D2D2-C922-4188-8D93-06421FB086BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{D864173B-FC56-474F-BB19-93461C3D99BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{13BAA9F5-FCF6-4533-A1D5-F93B666B0851}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - CrossCutting", "4 - CrossCutting", "{D17D932B-F2A2-4A4F-B64C-2E39F6DCBF4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{46F658FD-2D89-4D6A-8C53-F7BE33D89E8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +64,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9EDDE01D-9B09-4A02-98C9-F9F61A1EFCAD} = {AA81D2D2-C922-4188-8D93-06421FB086BC}
+		{60DCD405-897F-44DF-9541-56BE5264F20D} = {D17D932B-F2A2-4A4F-B64C-2E39F6DCBF4F}
+		{E2E5D642-D14F-4B02-88F9-A5FE994662CB} = {D864173B-FC56-474F-BB19-93461C3D99BA}
+		{084C1846-384F-4F8B-9774-3B8085E4558D} = {D864173B-FC56-474F-BB19-93461C3D99BA}
+		{51A68B99-7E88-45D3-B003-B104E18366BF} = {D864173B-FC56-474F-BB19-93461C3D99BA}
+		{249B9067-0035-43EE-92C1-6FDA458D68C8} = {13BAA9F5-FCF6-4533-A1D5-F93B666B0851}
+		{4A9D4A29-F8F8-4E5D-8964-4420979891DC} = {46F658FD-2D89-4D6A-8C53-F7BE33D89E8E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6B678D2-6F93-4EFF-8427-0FC9B2B2C031}

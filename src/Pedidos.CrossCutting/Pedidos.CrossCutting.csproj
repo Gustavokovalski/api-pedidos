@@ -4,4 +4,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pedidos.Domain.Command\Pedidos.Domain.Command.csproj" />
+    <ProjectReference Include="..\Pedidos.Infrastructure.Data\Pedidos.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
 </Project>
