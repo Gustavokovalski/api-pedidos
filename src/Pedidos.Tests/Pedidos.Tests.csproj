@@ -15,11 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="QueryHandler\" />
-    <Folder Include="Faker\QueryHandler\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Pedidos.Domain.Command\Pedidos.Domain.Command.csproj" />
     <ProjectReference Include="..\Pedidos.Domain.Query\Pedidos.Domain.Query.csproj" />
   </ItemGroup>

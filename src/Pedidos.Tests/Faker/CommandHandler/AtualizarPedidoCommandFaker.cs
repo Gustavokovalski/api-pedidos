@@ -1,9 +1,7 @@
 ﻿using Bogus;
 using Pedidos.Domain.Command.Commands.AtualizarPedido;
 using Pedidos.Domain.Command.Commands.ItemPedido;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Pedidos.Tests.Faker.CommandHandler
 {
