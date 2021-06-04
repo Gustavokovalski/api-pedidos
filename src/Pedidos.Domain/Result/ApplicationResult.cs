@@ -53,5 +53,6 @@ namespace Pedidos.Domain.Command.Result
         }
 
         public ApplicationResult(bool success, EDefaultResults message, dynamic data) : base(success, message) => Data = data;
+
     }
 }
