@@ -77,8 +77,10 @@ namespace Pedidos.Domain.Command.Commands.AtualizarPedido
 
         private async Task AtualizarItensPedido(AtualizarPedidoCommand command, Pedido pedido)
         {
+            if (pedido.Itens == null) return;
             var itensCommandUpdate = command.Itens.Where(l2 => pedido.Itens.Any(l1 => l1.Descricao.ToLower().Trim() == l2.Descricao.ToLower().Trim()));
             var itensUpdate = _mapper.Map<IList<Item>>(itensCommandUpdate);
+            if (itensUpdate == null) return;
             if (itensUpdate.Count > 0)
             {
                 itensUpdate.ToList().ForEach(x => { x.PedidoId = pedido.Id; x.Id = pedido.Itens.Where(z => z.Descricao.ToLower().Trim() == x.Descricao.ToLower().Trim()).Select(y => y.Id).FirstOrDefault(); });
@@ -88,8 +90,10 @@ namespace Pedidos.Domain.Command.Commands.AtualizarPedido
 
         private async Task InserirItensPedido(AtualizarPedidoCommand command, Pedido pedido)
         {
+            if (pedido.Itens == null) return;
             var itensCommandInsercao = command.Itens.Where(l2 => !pedido.Itens.Any(l1 => l1.Descricao.ToLower().Trim() == l2.Descricao.ToLower().Trim()));
             var itensInsercao = _mapper.Map<IList<Item>>(itensCommandInsercao);
+            if (itensInsercao == null) return;
             if (itensInsercao.Count > 0)
             {
                 itensInsercao.ToList().ForEach(x => x.PedidoId = pedido.Id);
