@@ -7,7 +7,7 @@
 * FluentValidation
 * Documentação API com Swagger
 * Unit Tests com NUnit, Moq e Bogus
-* Middlewares de tratamento de Exceção
+* Middleware de tratamento de Exceção
 * In-Memory database
 * Pattern CQRS
 * DDD
