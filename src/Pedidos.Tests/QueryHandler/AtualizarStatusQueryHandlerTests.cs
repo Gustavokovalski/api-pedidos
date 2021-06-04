@@ -51,7 +51,7 @@ namespace Pedidos.Tests.QueryHandler
                            Id = 1,
                            PedidoId = 1,
                            Descricao = "Item 1",
-                           PrecoUnitario = 10,
+                           PrecoUnitario = 2,
                            Quantidade = 5
                        }
                    };
@@ -144,7 +144,7 @@ namespace Pedidos.Tests.QueryHandler
                            Id = 1,
                            PedidoId = 1,
                            Descricao = "Item 1",
-                           PrecoUnitario = 5,
+                           PrecoUnitario = 1,
                            Quantidade = 5
                        }
                    };

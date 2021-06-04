@@ -65,7 +65,7 @@ namespace Pedidos.Domain.Query.Queries.AtualizarStatus
                 if (statusPedido == EStatusPedido.Aprovado)
                 {
                     var somaQuantidadeItens = pedido.Itens.ToList().Sum(x => x.Quantidade);
-                    var somaValorItens = pedido.Itens.ToList().Sum(x => x.PrecoUnitario);
+                    var somaValorItens = pedido.Itens.ToList().Sum(x => x.PrecoUnitario * x.Quantidade);
 
                     if (valorAprovado != somaValorItens) listaStatus.Add(valorAprovado < somaValorItens ? EStatusPedido.AprovadoValorMenor.GetEnumDescription() : EStatusPedido.AprovadoValorMaior.GetEnumDescription());
                     if (itensAprovados != somaQuantidadeItens) listaStatus.Add(itensAprovados < somaQuantidadeItens ? EStatusPedido.AprovadoQuantidadeMenor.GetEnumDescription() : EStatusPedido.AprovadoQuantidadeMaior.GetEnumDescription());
