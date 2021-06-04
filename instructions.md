@@ -1,5 +1,3 @@
-# api-pedidos
-
 # Features
 * .NET 5 WebApi
 * MediatR
