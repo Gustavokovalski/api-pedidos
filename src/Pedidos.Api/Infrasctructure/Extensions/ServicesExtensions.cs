@@ -29,12 +29,12 @@ namespace Pedidos.Api.Extensions
                 {
                     Title = "Pedidos.Api",
                     Version = "v1",
-                    Description = "",
+                    Description = "Api de Pedidos",
                     Contact = new OpenApiContact
                     {
-                        Name = "",
-                        Email = "",
-                        //Url = new Uri("git")
+                        Name = "Gustavo Kovalski Saporiti",
+                        Email = "gustavokovalski.saporiti@gmail.co,",
+                        Url = new Uri("https://github.com/Gustavokovalski")
                     },
                 });
             });
